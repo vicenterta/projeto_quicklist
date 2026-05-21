@@ -1,0 +1,37 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter, sans-serif;
+    }
+    :root {
+        font-size: 62.5%;
+
+        --background-primary: #F4F5FB;
+        --background-secondary: #FFF;
+        --color-brand: #CA3884;
+        --color-brand-hover: #A52C6B;
+        --color-danger: #C93847;
+        --content-primary: #080B12;
+        --content-secondary: #374151;
+        --content-tertiary: #9CA3AF;
+        --always-white: #FFF;
+        --border-primary: #D1D5DB;
+        --border-hover: #B9C2D0;
+    }
+    body {
+        font-size: 1.6rem;
+        padding-inline: 3.2rem;
+        background-color: var(--background-primary);
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        padding-block: 3.2rem 3.8rem;
+    }
+    .adicionar-item {
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 4.4rem;
+        }
+    }
