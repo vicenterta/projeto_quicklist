@@ -56,6 +56,39 @@
         input:focus {
             border-color: var(--color-brand);
         }
+        button {
+            background: var(--color-brand);
+            color: var(--always-white);
+            font-weight: 600;
+        }
+        button:hover {
+            background: var(--color-brand-hover);
+            transition: background 0.4s;
+        }
+    }
+
+    .itens {
+        margin-top: 4rem;
+        .item {
+            background: var(--always-white);
+            margin-bottom: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.2rem;
+            align-items: center;
+            border-radius: 1.2rem;
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 1.6rem;
+                    opacity: 0.7;
+                }
+            }
+        }
     }
     
     
