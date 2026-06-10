@@ -65,10 +65,12 @@
             background: var(--color-brand-hover);
             transition: background 0.4s;
         }
+        
     }
 
     .itens {
         margin-top: 4rem;
+    
         .item {
             background: var(--always-white);
             margin-bottom: 1.2rem;
@@ -77,16 +79,70 @@
             padding: 1.2rem;
             align-items: center;
             border-radius: 1.2rem;
-
+    
+            box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
+            line-height: 2.4rem;
+    
+            div {
+                display: flex;
+                gap: 1.2rem;
+                align-items: center;
+            }
+    
+            .checkbox-customizada {
+                border: 1px solid var(--border-primary);
+                width: 1.6rem;
+                height: 1.6rem;
+                border-radius: 0.6rem;
+            }
+    
+            div:has(input:checked) {
+                .checkbox-customizada {
+                    background: var(--color-brand);
+                    border-color: var(--color-brand);
+                    transition: 0.2s;
+                }
+    
+                label {
+                    text-decoration: line-through;
+                }
+            }
+    
+            input {
+                display: none;
+            }
+    
             button {
                 background: none;
                 border: none;
                 cursor: pointer;
-
+    
                 img {
                     width: 1.6rem;
                     opacity: 0.7;
                 }
+            }
+        }
+    }
+
+    @media (min-width:630px){
+        main{
+            max-width: 62.7rem;
+            margin-inline: auto;
+        }
+        .adicionar-item div {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 1.6rem;
+    
+            input {
+                grid-column: 1 / 8;
+                margin: 0;
+            }
+    
+            button {
+                grid-column: 8 / 11;
+                cursor: pointer;
             }
         }
     }
